@@ -1,24 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intergalactic Excuse Generator 🚀</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated stars -->
+    <div class="stars" id="stars"></div>
+    
+    <!-- Floating planets -->
+    <div class="planet planet1"></div>
+    <div class="planet planet2"></div>
+    
+    <div class="container">
+        <h1>🚀 Intergalactic Excuse Generator 🛸</h1>
+        <p class="subtitle">When Earth excuses aren't enough, go cosmic!</p>
+        
+        <div class="emoji">🪐</div>
+        
+        <p id="excuse">Loading your cosmic excuse...</p>
+        
+        <p class="refresh-hint">🔄 Refresh the page for a new excuse from the multiverse!</p>
+    </div>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-  <div class="container">
-    <p id="excuse"></p>
-  </div>
-  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-  <script type="module" src="/app.js"></script>
+    <!-- Link to external JavaScript file -->
+    <script src="app.js"></script>
 </body>
 </html>
