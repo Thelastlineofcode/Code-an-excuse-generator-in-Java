@@ -1,4 +1,4 @@
-// Generate random stars for background
+//Random Star Background
 function createStars() {
   const starsContainer = document.getElementById("stars");
   for (let i = 0; i < 50; i++) {
@@ -11,9 +11,9 @@ function createStars() {
   }
 }
 
-// Excuse generator with planets and urban slang
+
 function generateExcuse() {
-  // Arrays with space/planet theme and urban slang
+
   let who = [
     "My homeboy from Mars",
     "That sus alien from Neptune",
@@ -88,14 +88,17 @@ function generateExcuse() {
   let whatIndex = Math.floor(Math.random() * what.length);
   let whenIndex = Math.floor(Math.random() * when.length);
 
-  // Concatenate the excuse
+  
   let excuse = `${who[whoIndex]} ${action[actionIndex]} ${what[whatIndex]} ${when[whenIndex]}!`;
 
   return excuse;
 }
 
-// Set the excuse when the page loads
-window.onload = function () {
-  createStars();
-  document.getElementById("excuse").innerHTML = generateExcuse();
-};
+
+if (typeof window !== "undefined") {
+  window.onload = function () {
+    createStars();
+    document.getElementById("excuse").innerHTML = generateExcuse();
+  };
+}
+
